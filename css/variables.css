@@ -1,11 +1,40 @@
 body {
   background-color: black;
-  color: white; }
+  color: white;
+  margin-bottom: 10px;
+}
+
+nav{ margin-bottom: 10px;}
+nav a.navbar-brand{
+  width: 5%;
+  height: 5%;
+  display: block;
+}
+
+div.carousel{ padding: 15px;}
+
+div.col-6{ background-color: #343a40;}
 
 /*# sourceMappingURL=variables.css.map */
 
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  nav a.navbar-brand{
+    width: 15%;
+  }
+
+  .form-control{
+    width: 70%;
+    margin-right: 10px;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {
+  nav a.navbar-brand{
+    width: 15%;
+  }
+}
 
 /* Medium devices (tablets, 768px and up) /*/
 @media (min-width: 768px) {  }
