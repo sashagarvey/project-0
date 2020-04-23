@@ -4,6 +4,7 @@
         <title>Destinations in Jamaica</title>
         <meta charset="utf-8">
 
+        <meta name="author" content="Sasha-lee Garvey">
         <!-- responsive meta tag -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -19,7 +20,7 @@
     </head>
     <header>
       <!-- navigation bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">
           <img src="images/jaflag.png" width="100%" height="5%" alt="">
         </a>
@@ -82,24 +83,24 @@
         <h2>Top Tourist Destinations</h2>
         <div class="row">
           <div class="col-6">
-            <img src="images/jadunnsriverfalls.jpg" alt="Dunns River Falls" >
+            <a href="#"><img src="images/jadunnsriverfalls.jpg" alt="Dunns River Falls" ></a>
             <h4>Dunns River Falls</h4>
             <p>Encompassing 180 meters of gently terraced waterfalls, Dunn's River Falls is one of Jamaica's most famous natural attractions. The falls tumble over rocks and limestone ledges into the sea.</p>
           </div>
           <div class="col-6">
-            <img src="images/jabluemountains.jpg" alt="Blue Mountains" >
+            <a href="#"><img src="images/jabluemountains.jpg" alt="Blue Mountains" ></a>
             <h4>Blue and John Crow Mountains National Park</h4>
             <p>In 2015, the spectacular Blue and John Crow Mountains National Park was inscribed on the list of UNESCO World Heritage Sites for its rich natural and cultural heritage. Once a refuge for former slaves and the indigenous Taino, who fled here to escape slavery, this unspoiled preserve offers breathtaking scenery. Within its borders, you can explore jungle-clad mountains; waterfalls; lush rainforests; coffee plantations; and exotic plants and animals, including 800 species of endemic plants, more than 200 species of birds, and the world's second largest butterfly. </p>
           </div>
         </div>
         <div class="row">
           <div class="col-6">
-            <img src="images/jabluehole.jpg" alt="Blue Hole" >
+            <a href="#"><img src="images/jabluehole.jpg" alt="Blue Hole" ></a>
             <h4>Blue and John Crow Mountains National Park</h4>
             <p>High in the rainforest-cloaked mountains outside Ocho Rios, the Blue Hole (also called Island Gully Falls or the Irie Blue Hole) is a series of picturesque waterholes fed by gushing cascades. Guides lead you around the area where you can explore the falls and jump off cliffs into the refreshing pools below. </p>
           </div>
           <div class="col-6">
-            <img src="images/jariogranderiver.jpg" alt="Rio Grande River" >
+            <a href="#"><img src="images/jariogranderiver.jpg" alt="Rio Grande River" ></a>
             <h4>Rio Grande River</h4>
             <p>Expert guides pole bamboo rafts through an impressive stretch of tropical rainforest along the Rio Grande River during a two-and-a-half-hour tour. Rafting here dates back to around 1911, when banana farmers in the Rio Grande Valley used to transport their bananas along the river.</p>
           </div>
@@ -110,12 +111,26 @@
 
     <footer>
       <menu>
-        <ol>
-          <li>Home</li>
-          <li>Destinations</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ol>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </menu>
+
+      <!--Grid column-->
+     <div class="subscribe col-md-6 mb-4">
+
+       <form class="input-group">
+         <input type="text" class="form-control form-control-sm" placeholder="Your email"
+           aria-label="Your email" aria-describedby="basic-addon2">
+         <div class="input-group-append">
+           <button class="btn btn-sm btn-outline-white my-0" type="button">SUBSCRIBE!</button>
+         </div>
+       </form>
+
+     </div>
+     <!--Grid column-->
     </footer>
 </html>
