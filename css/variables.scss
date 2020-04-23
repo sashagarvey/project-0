@@ -5,3 +5,140 @@ body{
   background-color: $color;
   color: $fontcolor;
 }
+
+nav{ margin-bottom: 10px;}
+nav a.navbar-brand{
+  width: 8%;
+  height: 5%;
+  display: block;
+}
+
+nav form button.btn{
+  background-color: #28a745;
+  color: #000;
+}
+
+ section.contact-section .form-control{ width: 100%;}
+
+div.carousel{
+  padding: 15px;
+  margin-top: 80px;
+}
+
+div.col-6{ background-color: #343a40;}
+
+
+
+section.container{
+  overflow: hidden;
+}
+
+section.container div.col-6{
+  padding: 15px;
+  height: 460px;
+}
+
+section.container div.col-6 img{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+section.container div.col-6 p{
+  height: 200px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+footer{
+  padding: 10px;
+  background-color: #343a40;
+  overflow: hidden;
+  margin-top: 15px;
+  width: 100%;
+}
+
+footer menu{ }
+
+footer ul{
+  float: left;
+  display: block;
+  margin-top: 10px;
+}
+footer ul li{
+  float: left;
+  clear: none;
+  margin-right: 10px;
+  list-style: none;
+}
+
+footer menu ul li a{
+  color: #a9a9a9;
+}
+footer ul li a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .subscribe{ float: right;}
+footer form button:hover{
+  color:white;
+  background-color: #28a745;
+}
+
+/* contact page */
+section.contact-section{
+  color: #a9a9a9;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.contact{
+  background-color: #28a745;
+  color: #fff;
+}
+
+section.contact-section textarea{ margin-bottom: 10px;}
+section.contact-section button{
+  float: right;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=variables.css.map */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  nav a.navbar-brand{
+    width: 15%;
+    border: 2px solid red;
+  }
+
+  .form-control{
+    width: 70%;
+    margin-right: 10px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  nav a.navbar-brand{
+    border: 5px solid orange;
+    width: 15%;
+
+  }
+}
+
+/* Medium devices (tablets, 768px and up) /*/
+@media (min-width: 768px) {
+  nav a.navbar-brand{
+    width: 8%;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
