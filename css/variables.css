@@ -6,21 +6,92 @@ body {
 
 nav{ margin-bottom: 10px;}
 nav a.navbar-brand{
-  width: 5%;
+  width: 8%;
   height: 5%;
   display: block;
 }
 
-div.carousel{ padding: 15px;}
+div.carousel{
+  padding: 15px;
+  margin-top: 80px;
+}
 
 div.col-6{ background-color: #343a40;}
 
-p.test2 {
-  white-space: nowrap;
-  width: 200px;
-  border: 1px solid #000000;
+
+
+section.container{
+  overflow: hidden;
+}
+
+section.container div.col-6{
+  padding: 15px;
+  height: 460px;
+}
+
+section.container div.col-6 img{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+section.container div.col-6 p{
+  height: 200px;
+  display: block;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+footer{
+  padding: 10px;
+  background-color: #343a40;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+footer ul{
+  float: left;
+  display: block;
+  margin-top: 10px;
+}
+footer ul li{
+  float: left;
+  clear: none;
+  margin-right: 10px;
+  list-style: none;
+}
+
+footer menu ul li a{
+  color: #a9a9a9;
+}
+footer ul li a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .subscribe{ float: right;}
+footer form button:hover{
+  color:white;
+  background-color: #28a745;
+}
+
+/* contact page */
+section.contact-section{
+  color: #a9a9a9;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.contact{
+  background-color: #28a745;
+  color: #fff;
+}
+
+section.contact-section textarea{ margin-bottom: 10px;}
+section.contact-section button{
+  float: right;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=variables.css.map */
@@ -29,6 +100,7 @@ p.test2 {
 @media (max-width: 575.98px) {
   nav a.navbar-brand{
     width: 15%;
+    border: 2px solid red;
   }
 
   .form-control{
@@ -40,12 +112,18 @@ p.test2 {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   nav a.navbar-brand{
+    border: 5px solid orange;
     width: 15%;
   }
 }
 
 /* Medium devices (tablets, 768px and up) /*/
-@media (min-width: 768px) {  }
+@media (min-width: 768px) {
+  nav a.navbar-brand{
+    border: 5px solid green;
+    width: 8%;
+  }
+}
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { }
