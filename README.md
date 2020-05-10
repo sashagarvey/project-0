@@ -17,6 +17,7 @@ Pages included in this project:
 // contactus.html has a BootStrap form which users can send questions. all the information in this page is not real and the form does not validate.
 
 //Images folder contains all the images on this site.
+
 //CSS folder contains variables.scss were all the css code was written. This file contains all the css requirements for this project. variables.css was created when the .scss file was compiled and this is what is linked to all my .html pages.
 
 //all the information from this site was borrowed from www.planetware.com.
