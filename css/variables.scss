@@ -1,12 +1,18 @@
-$color: black;
-$fontcolor: white;
+$blackcolor: black;
+$whitecolor: white;
 
 body{
-  background-color: $color;
-  color: $fontcolor;
+  background-color: $blackcolor;
+  color: $whitecolor;
 }
 
-nav{ margin-bottom: 10px;}
+nav{
+  margin-bottom: 10px;
+  border-bottom: 2px solid #000;
+  -webkit-box-shadow: inset -1px -2px 35px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: inset -1px -2px 35px -1px rgba(0,0,0,0.5);
+  box-shadow: inset -1px -2px 35px -1px rgba(0,0,0,0.5);
+}
 nav a.navbar-brand{
   width: 8%;
   height: 5%;
@@ -15,27 +21,29 @@ nav a.navbar-brand{
 
 nav form button.btn{
   background-color: #28a745;
-  color: #000;
+  color: $blackcolor;
 }
 
- section.contact-section .form-control{ width: 100%;}
+section.contact-section .form-control{ width: 100%;}
 
-div.carousel{
+/* id selector */
+#carouselExampleIndicators{
+
   padding: 15px;
-  margin-top: 80px;
+  margin-top: 7%;
 }
 
 div.col-6{ background-color: #343a40;}
 
 
 
-section.container{
+.container{
   overflow: hidden;
+  background-color: #343a40;
 }
 
 section.container div.col-6{
   padding: 15px;
-  height: 460px;
 }
 
 section.container div.col-6 img{
@@ -44,60 +52,32 @@ section.container div.col-6 img{
 }
 
 section.container div.col-6 p{
-  height: 200px;
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-footer{
-  padding: 10px;
-  background-color: #343a40;
-  overflow: hidden;
-  margin-top: 15px;
-  width: 100%;
-}
-
-footer menu{ }
-
-footer ul{
-  float: left;
-  display: block;
-  margin-top: 10px;
-}
-footer ul li{
-  float: left;
-  clear: none;
-  margin-right: 10px;
-  list-style: none;
-}
-
-footer menu ul li a{
-  color: #a9a9a9;
-}
-footer ul li a:hover{
-  text-decoration: none;
-  color: #fff;
-}
-
-footer .subscribe{ float: right;}
-footer form button:hover{
-  color:white;
-  background-color: #28a745;
+section.container h2{
+  font-weight: bold;
+  font-size: 3vw;}
+div.col-6 h4{
+  font-size: 2vw;
 }
 
 /* contact page */
 section.contact-section{
   color: #a9a9a9;
   width: 80%;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin:auto;
 }
 
+html body section.contact-section{
+  margin-top: 10%!important;
+}
 .contact{
   background-color: #28a745;
-  color: #fff;
+  color: $whitecolor;
 }
 
 section.contact-section textarea{ margin-bottom: 10px;}
@@ -106,35 +86,126 @@ section.contact-section button{
   margin-top: 10px;
 }
 
+#destination-container{
+  margin-top: 9%;
+   background-color: #343a40;
+}
+table.address a{
+  color: $whitecolor;
+}
+
+table.address a:hover{ text-decoration: none;}
+
+/* destinations pages */
+div.destinations{
+  text-align: center;
+}
+div.destinations img{
+  margin-bottom: 25px;
+}
+
+
+/* about us page */
+div.aboutus{
+  margin-top: 8%;
+  padding: 50px 15px 15px 15px;
+  min-height: 400px;
+  p{
+    width: 40%;
+    float: left;
+    display: block;
+    margin-top: 15px;
+  }
+  .img{
+    width: 50%;
+    float: right;
+  }
+  img{
+    width: 100%;
+    border: 3px solid $whitecolor;
+  }
+  a{ color: $whitecolor; text-decoration: underline;}
+  a:hover{ color: #28a745;}
+}
+
+
+
+
+
+/* footer */
+/* example of scss nesting */
+footer{
+  padding: 10px;
+  background-color: #343a40;
+  overflow: hidden;
+  margin-top: 15px;
+  width: 100%;
+
+  ul{
+    float: left;
+    display: block;
+    margin-top: 10px;
+  }
+
+  li{
+    float: left;
+    clear: none;
+    margin-right: 10px;
+    list-style: none;
+  }
+
+  a{
+    color: #a9a9a9;
+  }
+}
+
+footer ul li a:hover{
+  text-decoration: none;
+  color: $whitecolor;
+}
+
+footer .subscribe{ float: right;}
+footer form button:hover{
+  color: $whitecolor;
+  background-color: #28a745;
+}
+
+
+
 /*# sourceMappingURL=variables.css.map */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   nav a.navbar-brand{
     width: 15%;
-    border: 2px solid red;
+  }
+
+  #carouselExampleIndicators{
+    margin-top: 10%;
   }
 
   .form-control{
     width: 70%;
     margin-right: 10px;
   }
+
+  footer ul{ margin-left: 0;}
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   nav a.navbar-brand{
-    border: 5px solid orange;
     width: 15%;
-
   }
+  margin-top: 10%;
 }
 
 /* Medium devices (tablets, 768px and up) /*/
 @media (min-width: 768px) {
   nav a.navbar-brand{
-    width: 8%;
+    width: 12%;
   }
+  text-color: #ff8080;
 }
 
 /*Large devices (desktops, 992px and up)*/
